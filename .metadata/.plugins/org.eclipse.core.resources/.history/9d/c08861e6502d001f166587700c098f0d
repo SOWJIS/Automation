@@ -1,0 +1,21 @@
+package Selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class WebTable {
+
+	public static void main(String[] args) {
+		
+	}
+
+	
+	}	
+
+
+
+
+
+	
+
+

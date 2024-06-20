@@ -1,0 +1,20 @@
+package TestNG;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class BeforeMethod {
+	  WebDriver driver;
+	  @org.testng.annotations.BeforeMethod
+	    void openApp()
+	    {
+	   	 driver=new EdgeDriver();
+	   	 driver.get("https://demo.guru99.com/v4");
+	    }
+@Test(priority=1)
+void Login()
+{
+	driver.findElement(By.name(""));
+}
+

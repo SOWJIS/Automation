@@ -1,0 +1,18 @@
+package TestNG;
+
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.decorators.WebDriverDecorator;
+
+public class Screenshot {
+
+	public static void main(String[] args) {
+		WebDriver driver= new EdgeDriver();
+		  driver.get("https://demo.guru99.com/v4/");
+		  TakesScreenshot Ts = (TakesScreenshot)driver;
+
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package TestNG;
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Groups {
+
+	public static void main(String[] args) {
+		WebDriver driver;
+		   
+		   void openApp()
+		   {
+		  	    driver=new EdgeDriver();
+		  	    driver.get("https://demo.guru99.com/v4");
+		   }
+		   @Test(priority=2,groups={"sanity"})
+		   void Login()
+		   {
+		  	    driver.findElement(By.name("uid")).sendKeys("mngr557557");
+		       driver.findElement(By.name("password")).sendKeys("amysyrU");
+		       driver.findElement(By.name("btnLogin")).click();
+		   }
+
+	}
+
+}
